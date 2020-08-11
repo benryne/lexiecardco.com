@@ -1,0 +1,49 @@
+{
+  "name": "benryne.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "autoprefixer": "^9.7.2",
+    "bootstrap": "^4.4.1",
+    "bourbon": "^6.0.0",
+    "jquery": "^3.4.1",
+    "neat": "^1.2.2",
+    "popper.js": "^1.16.0",
+    "watch": "^1.0.2",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "marked": "^0.3.18",
+    "minimatch": "^3.0.2",
+    "mustache": "^4.0.0",
+    "node-sass": "^4.13.0",
+    "postcss-loader": "^3.0.0",
+    "precss": "^4.0.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "uglify-js": "^3.8.0",
+    "underscore.string": "^3.3.5",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "watch": "watch 'webpack --config webpack.config.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benryne/benryne.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benryne/benryne.github.io/issues"
+  },
+  "homepage": "https://github.com/benryne/benryne.github.io#readme"
+}
