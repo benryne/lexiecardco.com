@@ -3,6 +3,7 @@
 .navbar {
     position: relative;
     &-branding {
+        font-family: $heading-font;
         position: absolute;
         font-size: 30px;
         color: white;
@@ -17,15 +18,18 @@
         vertical-align: center;
     }
     &-item {
-        font-size: 20px;
+        font-size: 18px;
         color: #fff;
         padding-left: 25px;
         text-decoration: none;
+        font-family: $subtext-font;
     }
     &-item-container {
         height: 100%;
     }
     &-shop {
+        font-family: $subtext-font;
+        font-size: 20px;
         position: absolute;
         right: 0;
         top: 0;

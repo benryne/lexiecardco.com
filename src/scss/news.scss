@@ -1,0 +1,52 @@
+.news {
+    &-container {
+        width: 100%;
+        background-color: $pink;
+        padding: 50px 100px;
+    }
+    &-header {
+        font-family: $heading-font;
+        font-size: 40px;
+        color:white;
+    }
+    &-card {
+        margin-top: 50px;
+        background-color: white;
+        width: 100%;
+        height: 200px;
+        &-image {
+            &-container {
+                width: 33%;
+                height: 100%;
+                display: inline-block;
+                vertical-align: top;
+            }
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &-text {
+            display: inline-block;
+            width: 66%;
+            height: 100%;
+            position: relative;
+        }
+        &-title {
+            font-family: $heading-font;
+            position: absolute;
+            font-size: 30px;
+            right: 25px;
+            top: 25px;
+        }
+        &-subtext {
+            font-size: 16px;
+            font-family: $subtext-font;
+            position: absolute;
+            right: 25px;
+            bottom: 25px;
+            width: calc(100% - 50px);
+            text-align: right;
+        }
+    }
+
+}

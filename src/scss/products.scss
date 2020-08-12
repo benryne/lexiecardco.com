@@ -1,0 +1,62 @@
+@import './var.scss';
+
+.products {
+    &-container {
+        width: 100%;
+        background-color: $pink;
+        padding: 50px 100px;
+    }
+    &-header {
+        font-family: $heading-font;
+        font-size: 40px;
+        color:white;
+        padding-bottom: 50px;
+    }
+    &-card {
+        padding: 0;
+        width: 25%;
+        height: 500px;
+        background-color: white;
+        display: inline-block;
+        vertical-align: top;
+        &-container {
+            font-size: 0;
+        }
+        &-middle {
+            vertical-align: top;
+            padding:0;
+            display: inline-block;
+            width: 25%;
+            height: 500px;
+            background-color: white;
+            margin-left: 12.5%;
+            margin-right: 12.5%;
+        }
+        &-image {
+            &-container {
+                height: 200px;
+                width: 100%;
+            }
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &-title {
+            text-align: right;
+            font-size: 30px;
+            font-family: $heading-font;
+            height: 100px;
+            width: 100%;
+            padding: 10%;
+        }
+        &-subtext {
+            text-align: right;
+            font-size: 16px;
+            font-family: $subtext-font;
+            height: 200px;
+            width: 100%;
+            padding: 10%;
+        }
+    }
+
+}
