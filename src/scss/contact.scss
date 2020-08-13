@@ -1,0 +1,31 @@
+.contact {
+    &-container {
+        width: 100%;
+        padding: 50px 100px;
+        background-color: $purple;
+    }
+    &-header {
+        width: 30%;
+        font-family: $heading-font;
+        font-size: 40px;
+        color:white;
+        display: inline-block;
+    }
+    &-logo {
+        color: white;
+        text-decoration: none;
+        padding: 0px 0px 0px 10px;
+        font-size: 22px;
+        &-container{
+            width: 69%;
+            text-align: right;
+            display: inline-block;
+        }
+    }
+    &-copyright {
+        width: 30%;
+        display: inline-block;
+        color: white;
+        font-size: 16px;
+    }
+}

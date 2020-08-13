@@ -4,6 +4,7 @@
 @import './hero.scss';
 @import './news.scss';
 @import './products.scss';
+@import './contact.scss';
 
 body {
     margin: 0px;
@@ -12,4 +13,5 @@ body {
 
 a:hover {
     text-decoration: none;
+    color: black;
 }
