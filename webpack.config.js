@@ -7,7 +7,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 // This is main configuration object.
 // Here you write different options and tell Webpack what to do
 module.exports = {
-  entry: './src/app.js',
+  entry: './src/js/app.js',
   // Path and filename of your result bundle.
   // Webpack will bundle all JavaScript into this file
   output: {
@@ -45,10 +45,23 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       hash: true,
-      title: 'My Awesome application',
-      myPageHeader: 'Hello World',
-      template: './src/index.html',
+      template: './src/html/index.html',
       filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      template: './src/html/about.html',
+      filename: 'about/index.html'
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      template: './src/html/newsletter.html',
+      filename: 'newsletter/index.html'
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      template: './src/html/non-profits.html',
+      filename: 'non-profits/index.html'
     }),
     new webpack.ProvidePlugin({
       $: "jquery",
