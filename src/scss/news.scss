@@ -3,6 +3,9 @@
         width: 100%;
         background-color: $pink;
         padding: 50px 100px;
+        @media (min-width: 1450px) {
+            padding: 50px 20%;
+        }
     }
     &-header {
         font-family: $heading-font;
