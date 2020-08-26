@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
     "autoprefixer": "^9.7.2",
     "bootstrap": "^4.4.1",
     "bourbon": "^6.0.0",

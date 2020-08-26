@@ -1,6 +1,11 @@
 import 'bootstrap';
 import '../scss/style.scss';
 import $ from 'jquery';
+import AOS from 'aos';
+// import 'aos/dist/aos.css';
+
+AOS.init();
+setTimeout(() => {AOS.refresh();}, 500);
 
 $( "div.products-card" ).hover(
     function() {
@@ -83,5 +88,16 @@ $( "div.products-card-middle" ).hover(
         $( this ).children(".products-card-image-container").css(styles);
         $( this ).children(".products-card-title").css(styles2);
         $( this ).children(".products-card-image-container").children(".products-card-image").removeClass("xd");
+    }
+);
+
+$( "div.blog-card" ).hover(
+    function() {
+        $( this ).children(".blog-card-text").children(".blog-card-subtext").hide();
+        $( this ).children(".blog-card-text").children(".blog-card-check").show();
+    },
+    function() {
+        $( this ).children(".blog-card-text").children(".blog-card-subtext").show();
+        $( this ).children(".blog-card-text").children(".blog-card-check").hide();
     }
 );

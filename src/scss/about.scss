@@ -4,6 +4,7 @@
     &-hero {
         width: 100%;
         height: calc( 100vh - 70px );
+        max-height: 800px;
         background-color: $dark-purple;
         color: white;
         &-header {

@@ -2,11 +2,13 @@
 @import './var.scss';
 @import './navbar.scss';
 @import './hero.scss';
-@import './news.scss';
+@import './blog.scss';
 @import './products.scss';
 @import './contact.scss';
 @import './about.scss';
 @import './non-profits.scss';
+
+@import '~aos/src/sass/aos.scss';
 
 body {
     margin: 0px;

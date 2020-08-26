@@ -55,8 +55,8 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       hash: true,
-      template: './src/html/newsletter.html',
-      filename: 'newsletter/index.html'
+      template: './src/html/blog.html',
+      filename: 'blog/index.html'
     }),
     new HtmlWebpackPlugin({
       hash: true,
