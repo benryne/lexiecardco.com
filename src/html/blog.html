@@ -9,24 +9,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=DM+Sans&family=Nunito&display=swap" rel="stylesheet">    
 </head>
 <body>
-    <nav class="navbar-expand-sm navbar-container">
-        <div class="navbar-branding">
-            Lexie Card Co.
-        </div>
-        <!-- <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-sm navbar-container">
+        <div class="navbar-branding">Lexie Card Co.</div>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button> -->
-        <div class="collapse navbar-collapse navbar-item-container" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="navbar-item" href="https://lexiecardco.com">Home</a>
-                <a class="navbar-item" href="https://lexiecardco.com/about">About</a>
-                <a class="navbar-item" href="https://lexiecardco.com/non-profits">Non-profits</a>
-            </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="navbar-item" href="https://lexiecardco.com">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="navbar-item" href="https://lexiecardco.com/about">About </a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-item" href="https://lexiecardco.com/non-profits">Non-profits</a>
+                </li>
+                <li class="nav-item dropdown navbar-shop">
+                    <a class="nav-link dropdown-toggle navbar-shop-drop" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Shop
+                    </a>
+                    <div class="dropdown-menu navbar-shop-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" style="color: white;" href="https://www.etsy.com/shop/LexieCardCompany?ref=shop_sugg" target="_blank">Etsy</a>
+                    <a class="dropdown-item" style="color: white;" href="https://www.patreon.com/join/lexiecardco" target="_blank">Patreon</a>
+                    </div>
+                </li>
+            </ul>
         </div>
     </nav>
-    <a class="navbar-shop" href="https://www.etsy.com/shop/LexieCardCompany?ref=shop_sugg" target="_blank">
-        <div class="navbar-shop-link">Shop<i class="navbar-shop-icon fas fa-shopping-bag"></i> </div>
-    </a>
     <div class="blog-hero">
         <img src="../LCC-hero.jpg" class="blog-hero-image">
         <div class="blog-hero-text">Blog</div>
