@@ -1,13 +1,31 @@
-.hero {
-    &-container {
-        width: 100%;
-        height: calc( 100vh - 70px );
-        max-height: 800px;
+@import './var.scss';
+@include media-breakpoint-down(xs)  {
+    .hero {
+        &-container {
+            width: 100%;
+            height: calc( 50vh - 70px );
+        }
+        &-image {
+            width: 100%;
+            height: calc( 50vh - 70px );
+            object-fit: cover;
+        }
     }
-    &-image {
-        width: 100%;
-        height: calc( 100vh - 70px );
-        max-height: 800px;
-        object-fit: cover;
+}
+
+
+@include media-breakpoint-up(sm) {
+    .hero {
+        &-container {
+            width: 100%;
+            height: calc( 100vh - 70px );
+            max-height: 800px;
+        }
+        &-image {
+            width: 100%;
+            height: calc( 100vh - 70px );
+            max-height: 800px;
+            object-fit: cover;
+        }
     }
 }

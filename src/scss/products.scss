@@ -1,95 +1,164 @@
 @import './var.scss';
 
-.products {
-    &-container {
-        width: 100%;
-        background-color: $white;
-        padding: 50px 100px 100px 100px;
-        @media (min-width: 1450px) {
-            padding: 50px 20% 100px 20%;
-        }
-    }
-    &-header {
-        font-family: $heading-font;
-        font-size: 40px;
-        color:black;
-        padding-bottom: 50px;
-    }
-    &-card {
-        position: relative;
-        padding: 0;
-        width: 30%;
-        height: 500px;
-        background-color: $light-pink;
-        display: inline-block;
-        vertical-align: top;
+@include media-breakpoint-down(xs)  {
+    .products {
         &-container {
-            font-size: 0;
+            // width: 100%;
+            background-color: $white;
+            padding: 0px 7.5% 50px 7.5%;
         }
-        &-middle {
-            position: relative;
+        &-header {
+            font-family: $heading-font;
+            font-size: 40px;
+            color:black;
+            padding-bottom: 50px;
+        }
+        &-card {
+            width: 100%;
+            margin-bottom: 50px;
+            // height: 500px;
+            background-color: $light-pink;
             vertical-align: top;
-            padding:0;
-            display: inline-block;
+            &-middle {
+                margin-bottom: 50px;
+                width: 100%;
+                background-color: $light-pink;
+            }
+            &-image {
+                &-container {
+                    height: 200px;
+                    width: 100%;
+                    padding: 10%;
+                    cursor: pointer;
+                }
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            &-title {
+                text-align: right;
+                font-size: 30px;
+                font-family: $heading-font;
+                height: 100px;
+                width: 100%;
+                padding: 0px 10%;
+            }
+            &-subtext {
+                text-align: right;
+                font-size: 14px;
+                font-family: $subtext-font;
+                // height: 150px;
+                width: 100%;
+                padding: 0px 10%;
+            }
+        }
+    }
+
+    .check {
+        // content: "check this out!";
+        color: black;
+        font-size: 16px;
+        font-family: $subtext-font;
+        padding: 25px 10%;
+        text-align: right;
+        // display: none;
+        cursor: pointer;
+    }
+}
+
+@include media-breakpoint-up(sm)  {
+    .products {
+        &-container {
+            width: 100%;
+            background-color: $white;
+            padding: 50px 100px 100px 100px;
+            @media (min-width: 1450px) {
+                padding: 50px 20% 100px 20%;
+            }
+        }
+        &-header {
+            font-family: $heading-font;
+            font-size: 40px;
+            color:black;
+            padding-bottom: 50px;
+        }
+        &-card {
+            position: relative;
+            padding: 0;
             width: 30%;
             height: 500px;
             background-color: $light-pink;
-            margin-left: 5%;
-            margin-right: 5%;
-        }
-        &-image {
+            display: inline-block;
+            vertical-align: top;
             &-container {
-                height: 250px;
-                width: 100%;
-                padding: 10%;
-                cursor: pointer;
+                font-size: 0;
             }
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            &-middle {
+                position: relative;
+                vertical-align: top;
+                padding:0;
+                display: inline-block;
+                width: 30%;
+                height: 500px;
+                background-color: $light-pink;
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+            &-image {
+                &-container {
+                    height: 250px;
+                    width: 100%;
+                    padding: 10%;
+                    cursor: pointer;
+                }
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            &-title {
+                text-align: right;
+                font-size: 30px;
+                font-family: $heading-font;
+                height: 100px;
+                width: 100%;
+                padding: 0px 10%;
+            }
+            &-subtext {
+                text-align: right;
+                font-size: 14px;
+                font-family: $subtext-font;
+                height: 150px;
+                width: 100%;
+                padding: 0px 10%;
+            }
         }
-        &-title {
-            text-align: right;
-            font-size: 30px;
-            font-family: $heading-font;
-            height: 100px;
-            width: 100%;
-            padding: 0px 10%;
+
+    }
+
+    .xd {
+        animation: myanimation 15s infinite;
+    }
+
+    .check {
+        // content: "check this out!";
+        color: white;
+        font-size: 16px;
+        font-family: $subtext-font;
+        position: absolute;
+        right: 10%;
+        bottom: 5%;
+        display: none;
+        cursor: pointer;
+    }
+
+    @keyframes myanimation
+    {
+        0% {
+            object-position: 10% 50%;
         }
-        &-subtext {
-            text-align: right;
-            font-size: 14px;
-            font-family: $subtext-font;
-            height: 150px;
-            width: 100%;
-            padding: 0px 10%;
+        100% {
+            object-position: 90% 50%;
         }
     }
 
-}
-
-.xd {
-    animation: myanimation 15s infinite;
-}
-
-.check {
-    // content: "check this out!";
-    color: white;
-    font-size: 16px;
-    font-family: $subtext-font;
-    position: absolute;
-    right: 10%;
-    bottom: 5%;
-    display: none;
-    cursor: pointer;
-}
-
-@keyframes myanimation
-{
-    0% {
-        object-position: 10% 50%;
-    }
-    100% {
-        object-position: 90% 50%;
-    }
 }

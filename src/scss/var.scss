@@ -4,3 +4,7 @@ $pink: #faaca8;
 $light-pink: #FFF4FE;
 $heading-font: 'Cormorant Garamond', serif;
 $subtext-font: 'DM Sans', sans-serif;
+
+$breakpoints: (phone: 640px, 
+               tablet: 768px, 
+               desktop: 1024px) !default;
